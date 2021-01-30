@@ -1,7 +1,7 @@
-import TickingClock from "./tickingClock";
-import RotateButton from "./rotateButton";
-import IncDecLimit from "./incDecLimit";
-import IncDecButton from "./incDecButton";
+import TickingClock from "./components/tickingClock";
+import RotateButton from "./components/rotateButton";
+import IncDecLimit from "./components/incDecLimit";
+import IncDecButton from "./components/incDecButton";
 import './App.css';
 
 function App() {

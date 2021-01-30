@@ -6,6 +6,7 @@ export default class IncDecLimit extends Component {
     this.state = {
       num: 0,
       temp: 0,
+      flag: false,
     };
   }
   
@@ -15,6 +16,7 @@ export default class IncDecLimit extends Component {
     if (temp === 0) {
       for (let i = 1; i <= 10; i++) {
         setTimeout(() => {
+          obj["flag"] = true;
           obj["num"] = i;
           obj["temp"] = obj["num"] === 10 ? 10 : 0;
           this.setState({
@@ -30,6 +32,7 @@ export default class IncDecLimit extends Component {
         setTimeout(() => {
           obj["num"] = i;
           obj["temp"] = obj["num"] === 0 ? 0 : 10;
+          if(obj["num"] === 0) obj["flag"] = false;
           this.setState({
             ...this.state,
             ...obj,
@@ -40,7 +43,7 @@ export default class IncDecLimit extends Component {
   }
 
   render() {
-    const { num } = this.state;
+    const { num, flag } = this.state;
     return (
       <div>
         <h1>Increment to a limit then decrement to a limit</h1>
@@ -49,6 +52,7 @@ export default class IncDecLimit extends Component {
           id="incerase_decrease_one"
           className="rotate-button div-click"
           onClick={() => this.updateNumber()}
+          disabled={flag}
         >
           Click Me!
         </button>
