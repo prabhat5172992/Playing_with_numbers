@@ -17,7 +17,7 @@ export default class TickingClock extends Component {
         if(t.substr(0,2) >= 12) {
             t = t.includes('PM') ? t : t.concat(' PM');
         } else {
-            t = t.includes('PM') ? t : t.concat(' AM');
+            t = t.includes('AM') ? t : t.concat(' AM');
         }
         this.setState({
             timeVal: t,
