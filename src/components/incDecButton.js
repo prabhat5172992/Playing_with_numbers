@@ -35,7 +35,7 @@ export default class IncDecButton extends Component {
                 <p>{num}</p>
                 <button 
                     id="incerase_decrease_one" 
-                    className="rotate-button div-click"
+                    className="div-click"
                     onClick={()=> this.updateCount()}
                 >
                     Click Me!

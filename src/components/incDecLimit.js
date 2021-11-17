@@ -50,7 +50,7 @@ export default class IncDecLimit extends Component {
         <p>{num}</p>
         <button
           id="incerase_decrease_one"
-          className="rotate-button div-click"
+          className="div-click"
           onClick={() => this.updateNumber()}
           disabled={flag}
         >

@@ -23,7 +23,7 @@ export default class RotateButton extends Component {
         const { fixedNum: arr } = this.state;
         return arr.map(item => {
             return item === 5 ? <button id={`btn${item}`} key={item} className="rotate-button" onClick={()=> this.clickRotate()}>{item}</button> : 
-            <button id={`btn${item}`} key={item} className="rotate-button">{item}</button>
+            <button className="btn-cursor" id={`btn${item}`} key={item}>{item}</button>
         })
     }
     render() {

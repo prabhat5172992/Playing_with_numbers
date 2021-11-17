@@ -2,6 +2,7 @@ import TickingClock from "./components/tickingClock";
 import RotateButton from "./components/rotateButton";
 import IncDecLimit from "./components/incDecLimit";
 import IncDecButton from "./components/incDecButton";
+import StopWatch from "./components/stopWatch";
 import './App.css';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <IncDecLimit />
       <IncDecButton />
       <TickingClock />
+      <StopWatch />
     </div>
   );
 }

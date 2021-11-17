@@ -19,7 +19,7 @@
   margin: 0 auto;
   cursor: pointer;
 }
-.rotate-button {
+button {
   width: 60px;
   padding: 8px 12px;
   border: 1px solid #ccc;
@@ -30,11 +30,25 @@
   cursor: pointer;
 }
 
-.rotate-button:disabled {
+
+
+.btn-cursor {
+  cursor: default;
+}
+
+button:disabled {
   cursor: default;
 }
 
 .div-click {
   width: 120px;
   padding: 12px 16px;
+}
+
+.pr {
+  width: 80px;
+}
+
+.break {
+  font-size: 30px;
 }
